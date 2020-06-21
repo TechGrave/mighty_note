@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1134.0" style="-fx-background-color: #ccf5ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mighty_note.LoginPageController">
+   <children>
+      <Label layoutX="221.0" layoutY="41.0" text="Welcome to Mighty Note" textFill="#390094">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="58.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="409.0" layoutY="231.0" prefHeight="96.0" prefWidth="317.0" style="-fx-background-color: #ccf5ff;">
+         <children>
+            <TextField fx:id="loginEmail" layoutY="-1.0" prefHeight="25.0" prefWidth="317.0" promptText="Email ID" />
+            <PasswordField fx:id="loginPassword" layoutY="34.0" prefHeight="25.0" prefWidth="317.0" promptText="Password" />
+            <Button fx:id="login" layoutX="104.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #390094;" text="Login" textFill="WHITE" />
+            <TextField fx:id="username" layoutY="179.0" prefHeight="25.0" prefWidth="317.0" promptText="Username" />
+            <TextField fx:id="email" layoutY="214.0" prefHeight="25.0" prefWidth="317.0" promptText="Email ID" />
+            <PasswordField fx:id="password" layoutY="249.0" prefHeight="25.0" prefWidth="317.0" promptText="Password" />
+            <PasswordField fx:id="confirmPassword" layoutY="284.0" prefHeight="25.0" prefWidth="317.0" promptText="Confirm Password" />
+            <Button fx:id="signup" layoutX="104.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #390094;" text="Signup" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="543.0" layoutY="185.0" text="Login">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="373.0" layoutY="218.0" prefHeight="2.0" prefWidth="389.0" style="-fx-background-color: #ccf5ff;" />
+      <Label layoutX="432.0" layoutY="136.0" text="One Account for all your notes" textFill="#575656">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="373.0" layoutY="388.0" prefHeight="2.0" prefWidth="389.0" style="-fx-background-color: #ccf5ff;" />
+      <Label layoutX="452.0" layoutY="359.0" text="New? Create your account">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

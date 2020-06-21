@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mighty_note.HomeController">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="1134.0" style="-fx-background-color: #1a1aff;">
+         <children>
+            <Label layoutX="24.0" layoutY="23.0" text="Mighty Note" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutY="83.0" prefHeight="43.0" prefWidth="1134.0" style="-fx-background-color: #66ccff;">
+         <children>
+            <Label fx:id="name" layoutX="27.0" layoutY="9.0" text="name">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="logout" layoutX="1058.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Logout" />
+            <Button fx:id="updateAccount" layoutX="947.0" layoutY="10.0" mnemonicParsing="false" text="Update Account" />
+            <Button fx:id="help" layoutX="896.0" layoutY="10.0" mnemonicParsing="false" text="Help" />
+            <Button fx:id="refresh" layoutX="829.0" layoutY="10.0" mnemonicParsing="false" text="Refresh" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="126.0" prefHeight="470.0" prefWidth="308.0">
+         <children>
+            <Label layoutX="27.0" layoutY="12.0" text="My Workbooks">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="41.0" prefHeight="0.0" prefWidth="278.0" />
+            <Label layoutX="27.0" layoutY="194.0" text="My Notebooks">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="221.0" prefHeight="0.0" prefWidth="278.0" />
+            <HBox fx:id="workbooks" layoutX="14.0" layoutY="53.0" prefHeight="127.0" prefWidth="278.0" style="-fx-background-color: red;" />
+            <HBox fx:id="notebooks" layoutX="14.0" layoutY="233.0" prefHeight="228.0" prefWidth="278.0" style="-fx-background-color: red;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="308.0" layoutY="278.0" maxHeight="271.0" maxWidth="557.0" minHeight="271.0" minWidth="557.0" prefHeight="271.0" prefWidth="557.0" style="-fx-background-color: yellow;">
+         <children>
+            <ScrollPane prefHeight="271.0" prefWidth="557.0">
+               <content>
+                  <AnchorPane fx:id="pages" prefHeight="174.0" prefWidth="509.0" />
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <Label layoutX="328.0" layoutY="151.0" text="Notebook ID:" />
+      <Label layoutX="328.0" layoutY="182.0" text="Subject:" />
+      <Label layoutX="328.0" layoutY="209.0" text="Teacher:" />
+      <Label layoutX="328.0" layoutY="239.0" text="Class:" />
+      <Label layoutX="573.0" layoutY="151.0" text="Date of Creation:" />
+      <Label fx:id="bookId" layoutX="412.0" layoutY="151.0" text="Label">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="subject" layoutX="386.0" layoutY="179.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="teacher" layoutX="386.0" layoutY="209.0" text="Label" />
+      <Label fx:id="className" layoutX="366.0" layoutY="237.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="675.0" layoutY="151.0" text="Label" />
+      <Button fx:id="addPage" layoutX="310.0" layoutY="562.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Add Page" />
+      <Button fx:id="updateBookDetails" layoutX="431.0" layoutY="562.0" mnemonicParsing="false" text="Update Book Details" />
+      <AnchorPane layoutX="873.0" layoutY="125.0" prefHeight="470.0" prefWidth="261.0">
+         <children>
+            <Label layoutX="13.0" layoutY="16.0" text="Book Bazaar">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutX="10.0" layoutY="45.0" prefHeight="3.0" prefWidth="241.0" />
+            <TextFlow layoutX="25.0" layoutY="57.0" prefHeight="70.0" prefWidth="211.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A single place to buy all your syllabus notebooks and workbooks. And also drawing books etc. Visit Book Bazar to know more." wrappingWidth="242.69482421875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+            <Button fx:id="visit" layoutX="76.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Visit" />
+            <Separator layoutX="10.0" layoutY="245.0" prefHeight="3.0" prefWidth="241.0" />
+            <Label layoutX="13.0" layoutY="217.0" text="Add Custom Book">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="addToMyAccount" layoutX="74.0" layoutY="431.0" mnemonicParsing="false" text="Add to my Account" />
+            <TextField fx:id="subjectText" layoutX="13.0" layoutY="309.0" prefHeight="25.0" prefWidth="229.0" promptText="Subject" />
+            <TextField fx:id="teacherText" layoutX="13.0" layoutY="349.0" prefHeight="25.0" prefWidth="229.0" promptText="Teacher" />
+            <TextField fx:id="classText" layoutX="14.0" layoutY="389.0" prefHeight="25.0" prefWidth="229.0" promptText="Class" />
+            <TextFlow layoutX="25.0" layoutY="257.0" prefHeight="43.0" prefWidth="211.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter details to add your own notebook." wrappingWidth="242.69482421875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+         </children>
+      </AnchorPane>
+      <Button fx:id="deleteBook" layoutX="566.0" layoutY="562.0" mnemonicParsing="false" text="Delete Book" />
+   </children>
+</AnchorPane>

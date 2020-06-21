@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mighty_note.CanvasClass">
+   <children>
+      <AnchorPane prefHeight="64.0" prefWidth="698.0" style="-fx-background-color: #000099;">
+         <children>
+            <Label fx:id="pageLabel" layoutX="25.0" layoutY="14.0" text="Page" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="64.0" prefHeight="32.0" prefWidth="698.0" style="-fx-background-color: #3385ff;">
+         <children>
+            <HBox layoutX="1.0" layoutY="3.0" prefHeight="25.0" prefWidth="358.0">
+               <children>
+                  <Label text="     " />
+                  <ColorPicker fx:id="colorPicker" promptText="Pen Color" />
+                  <Label text="          " />
+                  <ComboBox fx:id="penSize" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <Button fx:id="save" layoutX="640.0" layoutY="3.0" mnemonicParsing="false" text="Save" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
